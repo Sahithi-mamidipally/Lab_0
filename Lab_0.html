@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookWorm - Your Online E-book Platform</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="Front_end.css" />
+  </head>
+  <body style="background: rgb(33, 196, 196);">
+    <header class=" text-bg-secondary p-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>E-BOOK</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">SIGNUP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <select id="book-genres" name="book-genres">
+                <option value="action">SERVICES</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="romance">Romance</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="thriller">Thriller</option>
+                <option value="historical">Historical</option>
+                <option value="biography">Biography</option>
+                <option value="self-help">Self-Help</option>
+                <option value="poetry">Poetry</option>
+                <option value="graphic-novel">Graphic Novel</option>
+                <option value="young-adult">Young Adult</option>
+                <option value="children">Children's</option>
+                <option value="horror">Horror</option>
+                <option value="dystopian">Dystopian</option>
+                <option value="adventure">Adventure</option>
+                <option value="crime">Crime</option>
+                <option value="classics">Classics</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="spirituality">Spirituality</option>
+            </select>
+            
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main class="container mt-4">
+      <section id="home" class="mb-5">
+        <img
+          class="banner-img"
+          src="images/Screenshot 2024-09-18 174230.png"
+          alt="E-book reader"
+          class="img-fluid rounded"
+        />
+      </section>
+
+      <section id="catalog" class="mb-5">
+        <h2 class="mb-3">Our Top Picks</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Digital Revolution</td>
+                <td>Jane Doe</td>
+                <td>Non-fiction</td>
+              </tr>
+              <tr>
+                <td>Cosmic Adventures</td>
+                <td>John Smith</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <td>The Art of Coding</td>
+                <td>Alice Johnson</td>
+                <td>Educational</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="about" class="mb-5">
+        <h2 class="mb-3">About E-book</h2>
+        <p>
+          This is your <strong>go-to platform</strong> for e-books and audio across
+          all genres. We offer:
+        </p>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Vast selection of titles</li>
+          <li class="list-group-item">Competitive pricing</li>
+          <li class="list-group-item">User-friendly interface</li>
+          <li class="list-group-item">Personalized recommendations</li>
+        </ol>
+        
+      </section>
+
+      <section id="contact" class="mb-5">
+        <h2 class="mb-3">Contact For More Details</h2>
+        <form id="signup-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label">Address:</label>
+            <textarea
+              class="form-control"
+              id="address"
+              name="address"
+              required
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone:</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="genre" class="form-label">Favorite Genre:</label>
+            <select class="form-select" id="genre" name="genre">
+              <option value="fiction">Fiction</option>
+              <option value="non-fiction">Non-Fiction</option>
+              <option value="mystery">Mystery</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="romance">Romance</option>
+              <option value="science-fiction">Science Fiction</option>
+              <option value="thriller">Thriller</option>
+              <option value="historical">Historical</option>
+              <option value="biography">Biography</option>
+              <option value="self-help">Self-Help</option>
+              <option value="poetry">Poetry</option>
+              <option value="graphic-novel">Graphic Novel</option>
+              <option value="young-adult">Young Adult</option>
+              <option value="children">Children's</option>
+              <option value="horror">Horror</option>
+              <option value="dystopian">Dystopian</option>
+              <option value="adventure">Adventure</option>
+              <option value="crime">Crime</option>
+              <option value="classics">Classics</option>
+              <option value="philosophy">Philosophy</option>
+              <option value="spirituality">Spirituality</option>
+              <option value="fiction">Fiction</option>
+              <option value="non-fiction">Non-fiction</option>
+              <option value="mystery">Mystery</option>
+              <option value="sci-fi">Science Fiction</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Reading Preferences:</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="ebook"
+                name="format"
+                value="ebook"
+                checked
+              />
+              <label class="form-check-label" for="ebook">E-book</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="audiobook"
+                name="format"
+                value="audiobook"
+              />
+              <label class="form-check-label" for="audiobook">Audiobook</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Interests:</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="newsletter"
+                name="interests"
+                value="newsletter"
+              />
+              <label class="form-check-label" for="newsletter"
+                >Subscribe to newsletter</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="promos"
+                name="interests"
+                value="promos"
+              />
+              <label class="form-check-label" for="promos"
+                >Receive promotional offers</label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="reset" class="btn btn-secondary">Clear Form</button>
+        </form>
+      </section>
+    </main>
+    <footer class="text-bg-secondary p-3b text-white text-center py-3 mt-5">
+      <p class="mb-0">
+        &copy; <u><b>2024 E-BOOK. All rights reserved.</b></u>
+      </p>
+      
+      <br>
+     
+        <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="text-white me-3">
+          WhatsApp
+          <i class="fab fa-whatsapp fa-2x"></i> <!-- WhatsApp icon -->
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white">
+          Instagram
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+    </footer>
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
